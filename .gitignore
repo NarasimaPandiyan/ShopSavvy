@@ -60,7 +60,6 @@ Thumbs.db
 media/product_images/
 media/user_uploads/
 node_modules/
-/static/
 local_settings.py
 production_settings.py
 
