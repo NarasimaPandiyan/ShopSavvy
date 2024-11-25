@@ -17,3 +17,11 @@ class ProductAdmin(admin.ModelAdmin):
     list_filter = ('category', 'brand', 'is_available')
     search_fields = ('name', 'description')
     list_editable = ('price', 'stock', 'is_available')
+
+# Add this new admin registration for Review
+@admin.register(Review)
+class ReviewAdmin(admin.ModelAdmin):
+    list_display = ('product', 'customer', 'rating', 'created_at')
+    list_filter = ('rating', 'created_at')
+    search_fields = ('product__name', 'customer__name', 'comment')
+    readonly_fields = ('created_at',)
