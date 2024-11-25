@@ -20,14 +20,6 @@ wheels/
 .installed.cfg
 *.egg
 
-# Django
-*.log
-local_settings.py
-db.sqlite3
-db.sqlite3-journal
-media/
-static/admin/
-staticfiles/
 
 # Virtual Environment
 venv/
